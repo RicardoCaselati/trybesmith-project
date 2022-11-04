@@ -5,7 +5,7 @@ import { IProduct, Product } from '../interfaces';
 // import { IUser } from '../interfaces/IUser';
 // import { ILogin } from '../interfaces/ILogin';
 
-async function create(product: IProduct): Promise<Product> {
+export async function create(product: IProduct): Promise<Product> {
   const { name, amount } = product;
 
   const query = `INSERT INTO Trybesmith.Products (name, amount)
@@ -19,7 +19,14 @@ async function create(product: IProduct): Promise<Product> {
   return newProduct;
 }
 
-export default { create };
+export async function getAll(): Promise<Product[]> {
+  const query = 'SELECT * FROM Trybesmith.Products';
+
+  const [products] = await connection.execute(query);
+
+  return products as Product[];
+}
+
 // export default class UserModel {
 //   private connection = mysql; //atributo
 

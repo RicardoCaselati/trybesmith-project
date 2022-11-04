@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import ProductController from '../controllers/product.controller';
+import * as ProductController from '../controllers/product.controller';
 
 const router = Router();
 
@@ -8,9 +8,9 @@ const router = Router();
 // UserController = classe
 // new = instanciar
 
-// router.get('/', authMiddleware, userController.getAll.bind(userController));
 // router.post('/login', userController.login.bind(userController));
 
+router.get('/', ProductController.getAll.bind(ProductController));
 router.post('/', ProductController.create.bind(ProductController));
 
 export default router;
