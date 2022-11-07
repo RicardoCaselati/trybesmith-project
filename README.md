@@ -6,8 +6,8 @@
 
 ------------
 
-<p>Projeto projeto desenvolvido na <a hrefo=https://www.betrybe.com>Trybe</a> durante o módulo de Back-End!</p>
-<p>Nesse desenvolvemos uma API completa para uma loja de itens medievais utilizando Typescript respeitando todas as camadas da aplicação (Models, Service e Controllers) e, por meio dessa aplicação, é possível realizar as operações básicas que se pode fazer em um determinado banco de dados: Criação, Leitura, Atualização e Exclusão (CRUD - Create, Read, Update e Delete) em um banco de dados, utilizando o MySQL.</p>
+<p>Projeto desenvolvido na <a hrefo=https://www.betrybe.com>Trybe</a> durante o módulo de Back-End!</p>
+<p>Nesse projeto desenvolvemos uma API completa para uma loja de itens medievais utilizando Typescript respeitando todas as camadas da aplicação (Models, Service e Controllers) e, por meio dessa aplicação, é possível realizar as operações básicas que se pode fazer em um determinado banco de dados: Criação, Leitura, Atualização e Exclusão (CRUD - Create, Read, Update e Delete) em um banco de dados, utilizando o MySQL.</p>
 
 
 </br>
