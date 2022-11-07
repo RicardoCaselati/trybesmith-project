@@ -1,6 +1,6 @@
 import Joi from 'joi';
 import { RequestHandler } from 'express';
-import * as userModel from '../models/user.model'
+// import * as userModel from '../models/user.model';
 
 const validateLoginBody: RequestHandler = (req, res, next) => {
   const { username, classe, level, password } = req.body;
@@ -12,11 +12,11 @@ const validateLoginBody: RequestHandler = (req, res, next) => {
 
   const { error } = schema.validate({ username, classe, level, password });
 
-  const userExist = userModel.getByUserName(username);
+  // const userExist = userModel.getByUserName(username);
 
-  if (!userExist.username || !userExist.password) {
-    return res.status(401).json({ message: 'Username or password invalid' });
-  }
+  // if (!userExist.username || !userExist.password) {
+  //   return res.status(401).json({ message: 'Username or password invalid' });
+  // }
 
   if (error) {
     const errorMessage = error.details[0].message;

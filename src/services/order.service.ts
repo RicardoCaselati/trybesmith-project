@@ -1,9 +1,9 @@
 // import { IProduct } from '../interfaces';
-import orderModel from '../models/order.model';
+// import orderModel from '../models/order.model';
 
-async function orderServiceGetAll() {
-  const data = await orderModel.orderModelGetAll();
-  return { status: 200, data };
-}
+// async function orderServiceGetAll() {
+//   const data = await orderModel.orderModelGetAll();
+//   return { status: 200, data };
+// }
 
-export default { orderServiceGetAll };
+// export default { orderServiceGetAll };
