@@ -1,15 +1,25 @@
 import { Request, Response } from 'express';
+import loginService from '../services/login.service';
+import { ILogin } from '../interfaces/ILogin';
 
-import { UserCredentials } from '../interfaces';
-import * as loginService from '../services/login.service';
+export async function login(req: Request<object, object, ILogin>, res: Response) {
+  const { username, password } = req.body;
 
-export async function login(req: Request, res: Response) {
-  const userCredentials = req.body as UserCredentials;
-  const { status, data, error } = await loginService.login(userCredentials);
+  if (!username) {
+    return res.status(400).json({ message: '"username" is required' });
+  }
 
-  return error
-    ? res.status(status).json({ error })
-    : res.status(status).json(data);
+  if (!password) {
+    return res.status(400).json({ message: '"password" is required' });
+  }
+
+  const token = await loginService(req.body);
+
+  if (token.length === 0) {
+    return res.status(401).json({ message: 'Username or password invalid' });
+  }
+
+  return res.status(200).json({ token });
 }
 
 export default login;
