@@ -1,4 +1,4 @@
-<h1 align="center">Trybesmith</h1>
+<h1 align="center">Store Manager TypeScript</h1>
 </br>
 </br>
 </br>
