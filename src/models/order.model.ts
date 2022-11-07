@@ -17,7 +17,6 @@ export async function orderModelGetAll(): Promise<Order[]> {
   return orders as Order[];
 }
 
-// export async function create(productsIds: IProductId[], username: string): Promise<IOrderInsert> {
 export async function create(productsIds: number[], username: string): Promise<IOrderInsert> {
   const usernameQuery = 'SELECT * FROM Trybesmith.Users WHERE username = ?';
   const values = [username];
