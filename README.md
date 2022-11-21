@@ -1,4 +1,4 @@
-<h1 align="center">Store Manager TypeScript</h1>
+<h1 align="center">Store Manager TypeScript :dragon_face::bow_and_arrow::crossed_swords::magic_wand::shield: </h1>
 </br>
 </br>
 </br>
