@@ -7,12 +7,12 @@
 ------------
 
 <p>Projeto desenvolvido na <a hrefo=https://www.betrybe.com>Trybe</a> durante o módulo de Back-End!</p>
-<p>Neste projeto, apliquei os princípios da arquitetura SOLID e os princípios de POO (Programação Orientada a Objetos) em uma estrutura de jogos RPG (Role Playing Game).
+<p>Nesse projeto desenvolvi uma API completa para uma loja de itens medievais e pude praticar os seguintes pontos:
 
-Aprofundei o meu conhecimento em tópicos como:
-- Herança, Abstração, Encapsulamento e Polimorfismo;
-- Utilização de Composição;
-- Implementar em TypeScript: Interfaces, Classes, Instâncias, Atributos, Métodos e Objetos.</p>
+- Desenvolver o projeto utilizando Typescript para tipagem de dados;
+- Respeitar todas as camadas da aplicação (Models, Service e Controllers);
+- Fazer o CRUD (Create, Read, Update e Delete) em um banco de dados;
+- Realizar as operações em um banco de dados MySQL.</p>
 
 
 </br>
