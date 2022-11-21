@@ -31,10 +31,13 @@ Aprofundei o meu conhecimento em tópicos como:
 ------------
 
 <p>Para rodar o repositório localmente, realize o clone do projeto e utilize os comandos a seguir para inicializar o Docker e instalar as dependências:</p>
+
+````
 ```
 docker-compose up -d
 docker exec -it trybers_and_dragons bash
 npm install // para instalar as dependências
 docker-compose down // para parar completamente a aplicação
 ```
+````
 <p>Observação: Após a instalação das dependências confira os arquivos na pasta ./src, nela consta as classes criadas para construção dos persongens. No arquivo ./src/index.ts tem alguns exemplos e caso deseje explorar, construa personagens e realize batalhas, o comando npm start executa esse script de código no terminal.</p>
