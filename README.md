@@ -1,4 +1,4 @@
-<h1 align="center">Store Manager TypeScript :dragon_face::bow_and_arrow::crossed_swords::magic_wand::shield: </h1>
+<h1 align="center">TrybeSmith</h1>
 </br>
 </br>
 </br>
@@ -25,18 +25,3 @@ Aprofundei o meu conhecimento em tópicos como:
 <img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/17846388/image/medium-914684913366adfbc8b307596be7cb34.png" width="64px" alt="TypeScript">
 <img src="https://www.docker.com/wp-content/uploads/2022/01/Docker-Logo-White-RGB_Horizontal-730x189-1.png.webp" style="width: 200px" alt="docker"/>
 </div>
-
-</br>
-<h3>:gear: Instruções</h3>
-
-------------
-
-<p>Para rodar o repositório localmente, realize o clone do projeto e utilize os comandos a seguir para inicializar o Docker e instalar as dependências:</p>
-
-````
-docker-compose up -d
-docker exec -it trybers_and_dragons bash
-npm install // para instalar as dependências
-docker-compose down // para parar completamente a aplicação
-````
-<p>:warning: Observação: Após a instalação das dependências confira os arquivos na pasta ./src, nela consta as classes criadas para construção dos persongens. No arquivo ./src/index.ts tem alguns exemplos e caso deseje explorar, construa personagens e realize batalhas, o comando npm start executa esse script de código no terminal.</p>
